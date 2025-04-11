@@ -1,0 +1,10 @@
+[Trigger]
+Type = Path
+Operation = Install
+Operation = Upgrade
+Target = usr/share/wallpapers/*
+
+[Action]
+Description = Community update wallpapres
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/update-wallpaper
